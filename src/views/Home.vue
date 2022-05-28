@@ -6,8 +6,8 @@
       <div class="">
         <span class="text-4xl text-text w-[333px] h-24 font-semibold">Facilite sua vida. Crie alertas.</span>
         <span class="flex text-xl text-caption w-[333px] h-[48px] font-semibold">Deixe a preocupação de esquecer algo de lado</span>
-        <span class="caption2 flex text-sm text-caption w-[391px] h-[30px] font-semibold">Estamos criando soluções para alguns paises. Dê uma olhada se o seu esta em nossa lista.</span>
-        <div class="slotBtn">
+        <span class="mt-[68px] flex text-[12px] text-caption w-[391px] h-[30px] font-semibold">Estamos criando soluções para alguns paises. Dê uma olhada se o seu esta em nossa lista.</span>
+        <div class="mt-[24px]">
           <button type="button" @click="openList()" class="w-40 h-10 bg-button rounded-lg font-medium text-text hover:bg-buttonHover">Lista de paises</button>
         </div>
       </div>

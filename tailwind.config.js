@@ -5,6 +5,7 @@ module.exports = {
   content: [
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     colors: {
@@ -20,7 +21,7 @@ module.exports = {
       'buttonHover': '#14D7A2',
     },
     fontSize: {
-      'tiny': '.875rem',
+      'tiny': '.75rem',
       'base': '1rem',
       'lg': '1.125rem',
       'xl': '1.25rem',
@@ -43,5 +44,7 @@ module.exports = {
       }
     }
   },
-  plugins: [ ],
+  plugins: [
+    require('flowbite/plugin')
+  ]
 }
