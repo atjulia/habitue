@@ -1,0 +1,35 @@
+context('Test buttons.', () => {
+  it('Test button.', () => {
+    cy.viewport(1536, 750)
+    cy.visit('http://localhost:3000/')
+    cy.wait(1000)
+    cy.get(`[data-cy="button"]`)
+      .click({force: true})
+    cy.wait(1000)
+  })
+
+  it('Test github link', () => {
+    cy.viewport(1536, 750)
+    cy.visit('http://localhost:3000/')
+    cy.wait(1000)
+    cy.get(`[data-cy="git"]`)
+      .click({force: true})
+    cy.wait(1000)
+  })
+
+  it('Test light/dark button', () => {
+    cy.viewport(1536, 750)
+    cy.visit('http://localhost:3000/')
+    cy.wait(1000)
+    cy.get(`[data-cy="light/dark"]`)
+      .click()
+    cy.wait(1000)
+    cy.get(`[data-cy="light/dark"]`)
+      .click()
+    cy.wait(1000)
+    cy.get(`[data-cy="light/dark"]`)
+      .click()
+      .click()
+    cy.wait(2000)
+  })
+})

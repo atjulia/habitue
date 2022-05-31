@@ -8,12 +8,11 @@
         <span class="flex mt-6 text-xl text-caption w-[320px] h-[24px] font-semibold dark:text-caption-dark">Select filter options:</span>
         <form>
           <label for="default" class="block pt-12 mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Choose the Continent</label>
-          <select v-model="data.continent" @change="changeCountry" id="small" class="block mt-2 p-2 w-full text-sm text-text bg-gray-50 rounded-lg border border-button focus:ring-button focus:border-button dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-button dark:focus:border-button" required>
-            <!-- <option selected>Escolha o Continente</option> -->
+          <select v-model="data.continent" data-cy="continent" @change="changeCountry" id="small" class="block mt-2 p-2 w-full text-sm text-text bg-gray-50 rounded-lg border border-button focus:ring-button focus:border-button dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-button dark:focus:border-button" required>
             <option v-for="continent in continents" :key="continent.name" :value="continent.name">{{continent.name}}</option>
           </select>
           <label for="default" class="block pt-3 mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Countries with more than one language</label>
-          <select v-model="data.countries" @change="changeCountry" :disabled="!data.continent" id="small" class="block mt-2 p-2 w-full text-sm text-text bg-gray-50 rounded-lg border border-button focus:ring-button focus:border-button dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-button dark:focus:border-button">
+          <select v-model="data.countries" data-cy="countries" @change="changeCountry" :disabled="!data.continent" id="small" class="block mt-2 p-2 w-full text-sm text-text bg-gray-50 rounded-lg border border-button focus:ring-button focus:border-button dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-button dark:focus:border-button">
             <option v-for="countries in countries" :key="countries.name" :value="countries.name">{{countries.name}}</option>
           </select>
           <label for="default" class="block pt-3 mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Language</label>

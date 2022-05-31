@@ -3,7 +3,7 @@
       <span>
         &copy; {{new Date().getFullYear()}} - Habitue
       </span>
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/atjulia" className="flex items-center space-x-1.5 cursor-pointer transition duration-300 ease-in-out focus:outline-none focus:text-gray-500 hover:text-gray-500 ">
+      <a data-cy="git" target="_blank" rel="noopener noreferrer" href="https://github.com/atjulia" className="flex items-center space-x-1.5 cursor-pointer transition duration-300 ease-in-out focus:outline-none focus:text-gray-500 hover:text-gray-500 ">
         Developed by Júlia Karolina Atanazio
         &nbsp;
         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
