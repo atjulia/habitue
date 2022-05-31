@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
   mode: 'jit',
+  darkMode: 'class',
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   content: [
     './pages/**/*.{html,js}',
@@ -15,9 +16,11 @@ module.exports = {
       blue: colors.blue,
       red: colors.red,
       'background': '#FFFEFC',
+      'background-dark': '#111827',
       'button': '#17E8B0',
       'text': '#111111',
       'caption': '#6E6E6D',
+      'caption-dark': '#979797',
       'buttonHover': '#14D7A2',
     },
     fontSize: {

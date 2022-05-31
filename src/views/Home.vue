@@ -4,11 +4,11 @@
   
     <div class="col-span-full flex items-center">
       <div class="">
-        <span class="text-4xl text-text w-[333px] h-24 font-semibold">Facilite sua vida. Crie alertas.</span>
-        <span class="flex text-xl text-caption w-[333px] h-[48px] font-semibold">Deixe a preocupação de esquecer algo de lado</span>
-        <span class="mt-[68px] flex text-[12px] text-caption w-[391px] h-[30px] font-semibold">Estamos criando soluções para alguns paises. Dê uma olhada se o seu esta em nossa lista.</span>
-        <div class="mt-[24px]">
-          <button type="button" @click="openList()" class="w-40 h-10 bg-button rounded-lg font-medium text-text hover:bg-buttonHover">Lista de paises</button>
+        <span class="flex text-4xl text-text mb-8 w-[500px] h-24 font-semibold dark:text-background">Make your life easier. Create alerts.</span>
+        <span class="flex text-xl text-caption w-[360px] h-[48px] font-semibold dark:text-caption-dark">Leave the worry of forgetting something aside</span>
+        <span class="mt-[68px] flex text-[12px] text-caption w-[391px] h-[30px] font-semibold dark:text-caption-dark">We are creating solutions for some countries. Check if yours is on our list.</span>
+        <div class="mt-6">
+          <button type="button" @click="openList()" class="w-40 h-10 bg-button rounded-lg font-medium text-text  hover:bg-buttonHover">List of countries</button>
         </div>
       </div>
       <div class="pl-60 min-width-80">
@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style>
-.caption2 {
-  padding: 68px 0px 0px;
-}
 .slotBtn {
   padding-top: 78px;
 }
