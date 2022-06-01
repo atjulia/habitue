@@ -1,6 +1,6 @@
 <template>
   <nav class="col-span-full flex items-center justify-between">
-    <a class="branding cursor-pointer" @click="$router.push('/')">
+    <a data-cy="homeButton" class="branding cursor-pointer" @click="$router.push('/')">
       <img src="../assets/imgs/LogoHabitue.png" alt="" />
     </a>
     <div class="justify-items-end">

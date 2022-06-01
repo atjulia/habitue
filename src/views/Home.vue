@@ -5,7 +5,7 @@
     <div class="col-span-full flex items-center">
       <div class="">
         <span class="flex text-4xl text-text mb-8 w-[500px] h-24 font-semibold dark:text-background">Make your life easier. Create alerts.</span>
-        <span class="flex text-xl text-caption w-[360px] h-[48px] font-semibold dark:text-caption-dark">Leave the worry of forgetting something aside</span>
+        <span class="flex text-xl text-caption w-[360px] h-[48px] font-semibold dark:text-caption-dark">Leave the worry of forgetting something aside.</span>
         <span class="mt-[68px] flex text-[12px] text-caption w-[391px] h-[30px] font-semibold dark:text-caption-dark">We are creating solutions for some countries. Check if yours is on our list.</span>
         <div class="mt-6">
           <button type="button" @click="openList()" data-cy="button" class="w-40 h-10 bg-button rounded-lg font-medium text-text  hover:bg-buttonHover">List of countries</button>

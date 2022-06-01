@@ -82,12 +82,14 @@ export default {
 
       var twoLanguagesCountry = listCountrys.countries.filter(item => item.languages.length >= 2)
       th.countries = twoLanguagesCountry
-
-      var capitalSelected =  twoLanguagesCountry.find(item => item.name === th.data.countries).capital
-      th.data.capital = capitalSelected
       
-      var language = twoLanguagesCountry.find(item => item.name === th.data.countries).languages
-      th.languages = language
+      if(twoLanguagesCountry){
+        var capitalSelected =  twoLanguagesCountry.filter(item => item.name === th.data.countries).capital
+        th.data.capital = capitalSelected
+        var language = twoLanguagesCountry.find(item => item.name === th.data.countries).languages
+        th.languages = language
+      }
+      
     },
     submit (){
       this.submitList = false
